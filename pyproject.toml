@@ -3,11 +3,30 @@ name = "cv-bot"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12,<3.13"
 dependencies = [
+    "azure-ai-documentintelligence==1.0.2",
+    "azure-core>=1.41.0",
+    "azure-cosmos>=4.15.0",
     "azure-identity>=1.25.3",
+    "azure-search-documents>=12.0.0",
+    "azure-storage-blob>=12.29.0",
     "dotenv>=0.9.9",
+    "fastapi>=0.124.0",
     "openai>=2.36.0",
-    "pydantic>=2.13.4",
+    "pillow>=12.2.0",
+    "protobuf>=7.35.0",
+    "pydantic>=2.13.4,<2.14",
+    "python-multipart>=0.0.20",
+    "pymupdf>=1.27.2.3",
+    "pypdf>=6.11.0",
+    "pypdfium2>=5.8.0",
+    "semantic-kernel[mcp]==1.42.0",
+    "tavily-python>=0.7.24",
     "tiktoken>=0.12.0",
+    "uvicorn>=0.38.0",
 ]
+
+
+[tool.uv]
+prerelease = "if-necessary-or-explicit"
